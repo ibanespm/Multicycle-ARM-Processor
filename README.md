@@ -23,11 +23,11 @@ La implementación consta de varios módulos, entre ellos:
 
 En una implementación multi-ciclo de ARM, cada instrucción se ejecuta en varias etapas (ciclos de reloj). Las etapas típicas incluyen:
 
-1. **Fetch (Buscar):** La instrucción se obtiene de la memoria y se almacena en el registro de instrucciones (PC).
-2. **Decode (Decodificar):** La instrucción se decodifica para determinar la operación y los operandos involucrados.
-3. **Execute (Ejecutar):** La operación se realiza, y los resultados se calculan si es necesario.
-4. **Memory Access (Acceso a Memoria):** Si es necesario acceder a la memoria, se realiza esta operación.
-5. **Write Back (Escribir en Registros):** Los resultados finales se escriben de vuelta en los registros.
+- **Fetch (Buscar):** La instrucción se obtiene de la memoria y se almacena en el registro de instrucciones (PC).
+- **Decode (Decodificar):** La instrucción se decodifica para determinar la operación y los operandos involucrados.
+- **Execute (Ejecutar):** La operación se realiza, y los resultados se calculan si es necesario.
+- **Memory Access (Acceso a Memoria):** Si es necesario acceder a la memoria, se realiza esta operación.
+- **Write Back (Escribir en Registros):** Los resultados finales se escriben de vuelta en los registros.
 
 ## Requisitos
 
@@ -36,15 +36,15 @@ En una implementación multi-ciclo de ARM, cada instrucción se ejecuta en varia
 
 ## Ejecución de la Simulación
 
-1. Compilar los archivos Verilog:
+- Compilar los archivos Verilog:
     ```bash
     iverilog *.v
     ```
-2. Ejecutar la simulación:
+- Ejecutar la simulación:
     ```bash
     vvp a.out
     ```
-3. Ver los resultados con GTKWave:
+- Ver los resultados con GTKWave:
     ```bash
     gtkwave alu.vcd
     ```
